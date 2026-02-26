@@ -6,7 +6,7 @@ public class VariableDemo {
 
 		// data types basics
 
-		System.out.println("Hello World !!!");
+		System.out.println("Hello dj !!!");
 
 		// primitive data types
 		byte b = (byte) 127;
