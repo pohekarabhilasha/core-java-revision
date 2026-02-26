@@ -2,29 +2,21 @@ package com.abhilasha.basics;
 
 public class VariableDemo {
 
+//	Local Variable are declared inside the body of the method. You can use this variable only within that method.
+//
+//	1. Local variables can only use final as a modifier.
+//	2. They cannot use access modifiers or static.
+//	3. Java does NOT give default value to local variables.
+	
+	public static void messageDisplay()
+	{
+		String msg="Hello, I'm a local variable!!"; //local variable
+		System.out.println(msg);
+	}
 	public static void main(String[] args) {
 
-		// data types basics
-
-		System.out.println("Hello dj !!!");
-
-		// primitive data types
-		byte b = (byte) 127;
-		boolean bool = false;
-		char c = 'a';
-		short s = 234;
-		int i = 289;
-		float f = 54.888887f;
-		long l = 299;
-		double d = 23.898945378;
-
-		System.out.println(b);
-		System.out.println(bool);
-		System.out.println(c);
-		System.out.println(s);
-		System.out.println(i);
-		System.out.println(f);
-		System.out.println(l);
-		System.out.println(d);
+		int num=10; //local variable
+		System.out.println("The number is:" +num);
+		messageDisplay();
 	}
 }
