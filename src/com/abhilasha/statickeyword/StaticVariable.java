@@ -15,7 +15,7 @@ public class StaticVariable {
 	
 	int rollNo;
     String name;
-    static String college = "NCI College"; // static variable
+    static String college = "NCI"; // static variable
 
     StaticVariable(int r, String n) {
         rollNo = r;
@@ -23,14 +23,14 @@ public class StaticVariable {
     }
 
     void display() {
-        System.out.println(rollNo + " " + name + " " + college);
+        System.out.println("Student's Detail:" + rollNo + " " + name);
     }
 
 	 public static void main(String[] args)
 	{
 	        StaticVariable s1 = new StaticVariable(101, "ABC");
 	        StaticVariable s2 = new StaticVariable(102, "XYZ");
-
+           System.out.println("College Name:" + StaticVariable.college);// accessing static members directly using class name.
 	        s1.display();
 	        s2.display();
 	}
