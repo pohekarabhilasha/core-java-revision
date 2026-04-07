@@ -4,13 +4,14 @@ public class Employee {
 	
 	
 	// Encapsulation is a process of wrapping data and code into single unit.
-	// Encapsulation helps to protect the sensitive data from being accessed directly and provides controlled access to data.
+	// Encapsulation helps to protect sensitive data from being attacked, easier maintainability, controlled data access.
 	// We can create fully encapsulated class by making all data members private and providing public getter and setter methods to set and get data into it.
 	
 	private int empId;
 	private double salary;
 	
-	public int getempId()
+	
+	public int getempId() // Getter method (used to read value)
 	{
 		return empId;
 	}
@@ -19,7 +20,7 @@ public class Employee {
 		 return salary;
 	 }
 	 
-	 public void setempId(int empId)
+	 public void setempId(int empId)  // Setter method (used to set value)
 	 {
 		 this.empId = empId;
 	 }
